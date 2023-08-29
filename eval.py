@@ -56,6 +56,15 @@ class eval_cog(commands.Cog):
             await message.channel.send(ret)
         except:
             traceback.print_exc()
+#wcadmiral shitcoding area start
+
+@client.command()
+async def my_command(ctx):
+    try:
+        result = 1 / 0
+    except ZeroDivisionError:
+        await ctx.send("no")
+#wcadmiral shitcoding area end
 
 async def setup(bot):
     l = eval_cog(bot)
